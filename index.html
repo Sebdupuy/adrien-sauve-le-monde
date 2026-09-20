@@ -38,19 +38,30 @@
       letter-spacing: .22em;
       text-transform: uppercase;
       opacity: .65;
-      margin: 0 0 34px;
+      margin: 0 0 40px;
     }
 
-    audio {
-      width: 100%;
-      max-width: 500px;
+    .play {
+      display: inline-block;
+      padding: 18px 32px;
+      border: 1px solid rgba(255,255,255,.5);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      transition: background .2s, color .2s;
+    }
+
+    .play:hover {
+      background: #fff;
+      color: #080808;
     }
 
     .note {
       font-size: 12px;
       letter-spacing: .04em;
-      text-transform: none;
-      margin-top: 22px;
+      margin-top: 24px;
       opacity: .35;
     }
   </style>
@@ -63,13 +74,12 @@
 
     <p>Générique de fin</p>
 
-    <audio controls preload="metadata">
-      <source src="generique.mp3" type="audio/mpeg">
-      Votre navigateur ne peut pas lire ce fichier audio.
-    </audio>
+    <a class="play" href="generique.mp3">
+      ▶ Écouter le générique
+    </a>
 
     <div class="note">
-      Appuyez sur ▶ pour écouter.
+      Lancez la musique pour le générique de fin.
     </div>
   </main>
 
